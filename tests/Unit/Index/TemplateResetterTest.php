@@ -11,6 +11,7 @@ use FOS\ElasticaBundle\Index\IndexTemplateManager;
 use FOS\ElasticaBundle\Index\MappingBuilder;
 use FOS\ElasticaBundle\Index\ResetterInterface;
 use FOS\ElasticaBundle\Index\TemplateResetter;
+use FOS\ElasticaBundle\Tests\Unit\ProphecyTrait;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 
@@ -19,6 +20,8 @@ use Prophecy\Argument;
  */
 class TemplateResetterTest extends TestCase
 {
+    use ProphecyTrait;
+
     /**
      * @var ManagerInterface
      */

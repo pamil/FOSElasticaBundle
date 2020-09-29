@@ -4,6 +4,7 @@ namespace FOS\ElasticaBundle\Tests\Unit\Index;
 
 use Elastica\IndexTemplate;
 use FOS\ElasticaBundle\Index\IndexTemplateManager;
+use FOS\ElasticaBundle\Tests\Unit\ProphecyTrait;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -11,6 +12,8 @@ use PHPUnit\Framework\TestCase;
  */
 class IndexTemplateManagerTest extends TestCase
 {
+    use ProphecyTrait;
+
     /**
      * Test get index template
      *
